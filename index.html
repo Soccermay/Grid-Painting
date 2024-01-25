@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body {
+      height: 130vh;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      background-color: lightgreen;
+    }
+
+    .grid-container {
+      display: grid;
+      height: 748px;
+      width: 748px;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      background-color: #000;
+      gap: 9px;
+    }
+
+    .item {
+      background-color: azure;
+    }
+
+    .red {
+      background-color: #E72F24;
+    }
+
+    .white {
+      background-color: #F0F1EC;
+      grid-column: 2 / 5;
+    }
+
+    .white2 {
+      background-color: #F0F1EC;
+      grid-row: 4;
+    }
+
+    .white3 {
+      background-color: #F0F1EC;
+      grid-column: 1;
+      grid-row: 2 / 4;
+    }
+
+    .white3 > img {
+      float: left;
+      opacity: 0.7;
+      border: 2px solid red;
+    }
+
+    .white3 > p {
+      font-size: 20px;
+    }
+
+    .white4 {
+      background-color: #F0F1EC;
+      grid-column: 2 / 4;
+      grid-row: 2 / 4;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 27px;
+    }
+
+    .white4 > p {
+      border: 7px dashed hotpink;
+      padding: 10px;
+      border-radius: 2rem;
+      background-color: grey;
+    }
+
+    .white5 {
+      background-color: #F0F1EC;
+      grid-column: 4;
+      grid-row: 3 / 5;
+    }
+
+    .black {
+      background-color: #232629;
+      grid-column: 3;
+      grid-row: 5;
+
+    }
+
+    .blue {
+      background-color: #004592;
+      grid-column: 4;
+      border-bottom: 10px solid black;
+    }
+
+    .yellow {
+      background-color: #F9D01E;
+      grid-row: 4;
+      grid-column: 3;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="grid-container">
+    <div class="item red"></div>
+    <div class="item white"></div>
+    <div class="item black"></div>
+    <div class="item blue"></div>
+    <div class="item yellow"></div>
+    <div class="item white2"></div>
+    <div class="item white3">
+      <img src="../3.3 Image Elements/goal2.png" alt="" height="140px" width="140px">
+      <p>This right here is a pic of a cute dog. His name is Roger and he's about 2 years old.</p>
+    </div>
+    <div class="item white4">
+      <p>Hello there broski</p>
+    </div>
+    <div class="item white5"></div>
+  </div>
+</body>
+
+</html>
